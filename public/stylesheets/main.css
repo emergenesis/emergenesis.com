@@ -347,9 +347,9 @@ address {
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #cccccc;
+  border: 1px solid #bbbbbb;
   *border: 0;
-  border-bottom-color: #b3b3b3;
+  border-bottom-color: #a2a2a2;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -464,17 +464,17 @@ address {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #5d797f;
-  background-image: -moz-linear-gradient(top, #5d7c7f, #5d737f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5d7c7f), to(#5d737f));
-  background-image: -webkit-linear-gradient(top, #5d7c7f, #5d737f);
-  background-image: -o-linear-gradient(top, #5d7c7f, #5d737f);
-  background-image: linear-gradient(to bottom, #5d7c7f, #5d737f);
+  background-color: #5d757f;
+  background-image: -moz-linear-gradient(top, #5d7c7f, #5d6b7f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5d7c7f), to(#5d6b7f));
+  background-image: -webkit-linear-gradient(top, #5d7c7f, #5d6b7f);
+  background-image: -o-linear-gradient(top, #5d7c7f, #5d6b7f);
+  background-image: linear-gradient(to bottom, #5d7c7f, #5d6b7f);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5d7c7f', endColorstr='#ff5d737f', GradientType=0);
-  border-color: #5d737f #5d737f #3d4b53;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5d7c7f', endColorstr='#ff5d6b7f', GradientType=0);
+  border-color: #5d6b7f #5d6b7f #3d4653;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #5d737f;
+  *background-color: #5d6b7f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -485,12 +485,12 @@ address {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #5d737f;
-  *background-color: #526670;
+  background-color: #5d6b7f;
+  *background-color: #525f70;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #475962 \9;
+  background-color: #475262 \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -809,7 +809,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #5d737f;
+  background-color: #5d6b7f;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -2211,118 +2211,6 @@ legend + .control-group {
 .alert-block p + p {
   margin-top: 5px;
 }
-.modal-open .dropdown-menu {
-  z-index: 2050;
-}
-.modal-open .dropdown.open {
-  *z-index: 2050;
-}
-.modal-open .popover {
-  z-index: 2060;
-}
-.modal-open .tooltip {
-  z-index: 2080;
-}
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000000;
-}
-.modal-backdrop.fade {
-  opacity: 0;
-}
-.modal-backdrop,
-.modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 1050;
-  overflow: auto;
-  width: 560px;
-  margin: -250px 0 0 -280px;
-  background-color: #ffffff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999;
-  /* IE6-7 */
-
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.modal.fade {
-  -webkit-transition: opacity .3s linear, top .3s ease-out;
-  -moz-transition: opacity .3s linear, top .3s ease-out;
-  -o-transition: opacity .3s linear, top .3s ease-out;
-  transition: opacity .3s linear, top .3s ease-out;
-  top: -25%;
-}
-.modal.fade.in {
-  top: 50%;
-}
-.modal-header {
-  padding: 9px 15px;
-  border-bottom: 1px solid #eee;
-}
-.modal-header .close {
-  margin-top: 2px;
-}
-.modal-header h3 {
-  margin: 0;
-  line-height: 30px;
-}
-.modal-body {
-  overflow-y: auto;
-  max-height: 400px;
-  padding: 15px;
-}
-.modal-form {
-  margin-bottom: 0;
-}
-.modal-footer {
-  padding: 14px 15px 15px;
-  margin-bottom: 0;
-  text-align: right;
-  background-color: #f5f5f5;
-  border-top: 1px solid #ddd;
-  -webkit-border-radius: 0 0 6px 6px;
-  -moz-border-radius: 0 0 6px 6px;
-  border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: inset 0 1px 0 #ffffff;
-  -moz-box-shadow: inset 0 1px 0 #ffffff;
-  box-shadow: inset 0 1px 0 #ffffff;
-  *zoom: 1;
-}
-.modal-footer:before,
-.modal-footer:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.modal-footer:after {
-  clear: both;
-}
-.modal-footer .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
 .close {
   float: right;
   font-size: 20px;
@@ -2859,7 +2747,6 @@ a:hover {
   height: 5px;
   background: #ad235e;
 }
-.btn,
 .btn-group > .dropdown-toggle {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -3012,10 +2899,14 @@ h1 a:active {
 h2 {
   font-size: 22px;
 }
-.inline-header {
-  font-weight: bold;
-  text-decoration: underline;
-  margin-right: 10px;
+.row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.row h1,
+.row h2,
+.row h3 {
+  margin-top: 0;
 }
 .blog-post h2 {
   margin: 30px 0 0 0;
@@ -3045,67 +2936,6 @@ h2 {
 .pagination {
   padding-top: 20px;
   border-top: 1px solid #eeeeee;
-}
-.citeplasmChart {
-  margin: 20px 0;
-}
-.citeplasmChart > p {
-  text-align: center;
-}
-.citeplasmChart.active {
-  border: 1px solid #eeeeee;
-}
-.citeplasmChart svg {
-  margin-bottom: -10px;
-}
-.citeplasmChart .hover .vcircle {
-  fill: #CDA3BE;
-}
-.citeplasmChart .hover .vlabel {
-  fill: #eeeeee;
-}
-.citeplasmChart .hover .edge {
-  stroke: #eee;
-}
-.citeplasmChart .hover .vertex.active .vcircle {
-  fill: #ad235e;
-}
-.citeplasmChart .hover .vertex.active .vlabel {
-  fill: #333333;
-}
-.citeplasmChart .hover .edge.active {
-  stroke: #7D9C9F;
-}
-.citeplasmChart .edge {
-  -webkit-transition: stroke 0.15s linear;
-  -moz-transition: stroke 0.15s linear;
-  -o-transition: stroke 0.15s linear;
-  transition: stroke 0.15s linear;
-  fill: none;
-  stroke: #7D9C9F;
-  stroke-width: 3px;
-}
-.citeplasmChart .vcircle {
-  -webkit-transition: fill 0.15s linear;
-  -moz-transition: fill 0.15s linear;
-  -o-transition: fill 0.15s linear;
-  transition: fill 0.15s linear;
-  stroke: none;
-  fill: #ad235e;
-}
-.citeplasmChart .vlabel {
-  -webkit-transition: fill 0.15s linear;
-  -moz-transition: fill 0.15s linear;
-  -o-transition: fill 0.15s linear;
-  transition: fill 0.15s linear;
-  fill: #333333;
-  font-size: 10px;
-}
-.citeplasmChart .modal-header h3 {
-  text-align: left;
-}
-.citeplasmChart .modal-header .close {
-  font-size: 30px;
 }
 /*!
  * Bootstrap Responsive v2.0.4
